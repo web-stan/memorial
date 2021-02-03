@@ -1,0 +1,648 @@
+@import "~@/assets/scss/utils/vars";
+@import "~@/assets/scss/utils/gui";
+@import "~@/assets/scss/utils/mixins";
+
+@include z-index('.z-index-', 'z-index');
+
+.dashboard {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__content {
+    margin: 39px 0 0 0;
+    z-index: 1;
+    max-width: 1228px;
+    width: 100%;
+
+    @include max_1669 {
+      margin: 32px 0 0 0;
+    }
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include max_1669 {
+      padding-left: 16px;
+    }
+
+    &-name {
+      margin-top: 9px;
+      color: #083d58;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  &__site {
+    margin-bottom: 122px;
+
+    @include max_1669 {
+      padding: 0 10px 0 22px;
+
+      margin-bottom: 40px;
+    }
+
+    @include max_413 {
+      padding: 0 10px;
+    }
+
+    @include max_374 {
+      padding: 0 10px;
+    }
+  }
+}
+
+.site {
+  &__info {
+    margin-top: 42px;
+    width: 1226px;
+    height: 116px;
+    border-radius: 20px;
+    background-color: $main-color;
+    color: $default-color;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @include max_1669 {
+      margin-top: 49px;
+      width: 100%;
+    }
+
+    .info-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .manage-wrapper {
+      width: 5px;
+      height: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 47px;
+      margin-top: 13px;
+
+      @include max_1669 {
+        margin-left: 28px;
+        margin-top: 12px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__avatar {
+    display: flex;
+
+    img {
+      width: 90px;
+      height: 90px;
+      border-radius: 25px;
+      box-shadow: 0 13px 16px rgba(0, 0, 0, 0.16);
+      margin-right: 19px;
+    }
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    margin-right: 17px;
+
+    &-name {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 34px;
+    }
+    &-years {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  &__manage {
+    width: 4px;
+    height: 4px;
+    position: relative;
+    background-color: $default-color;
+    border-radius: 50%;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background-color: inherit;
+      border-radius: inherit;
+    }
+
+    &:before {
+      top: -6px;
+    }
+
+    &:after {
+      top: 6px;
+    }
+  }
+
+  &__content {
+    margin-top: 48px;
+    height: 461px;
+    background-color: $default-color;
+    box-sizing: border-box;
+
+    @include max_1669 {
+      margin-top: 40px;
+      height: 647px;
+    }
+  }
+
+  &__header {
+    background-color: $site-color;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0 27px;
+    color: $default-color;
+    border-left: 1px solid $site-color;
+    border-right: 1px solid $site-color;
+    box-sizing: border-box;
+  }
+
+  &__label {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 64px;
+  }
+
+  &__memorial {
+    height: 99px;
+    background-color: $light-color;
+    border-left: 1px solid $light-color;
+    border-right: 1px solid $light-color;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 26px 0 29px;
+
+    @include max_1669 {
+      height: 164px;
+      flex-direction: column;
+      padding: 0 15px;
+    }
+
+    @include max_374 {
+      padding: 0 10px;
+    }
+  }
+
+  &__stories {
+    height: 298px;
+    border: 1px solid $borderColorLight;
+    background-color: $default-color;
+    border-top: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-sizing: border-box;
+
+    @include max_1669 {
+      height: 409px;
+    }
+  }
+}
+
+.memorial {
+  &__control {
+    display: flex;
+    flex-direction: row;
+    margin-top: 28px;
+
+    @include max_1669 {
+      margin: 0 5px 25px -1px;
+    }
+
+    .btn {
+      margin-right: 13px;
+
+      @include max_1669 {
+        margin-right: 0;
+      }
+    }
+
+    .btn-add {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      width: 146px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+
+      .plus {
+        margin-left: 4px;
+        font-size: 29px;
+      }
+
+      @include max_1669 {
+        width: 121px;
+        height: 47px;
+        margin-right: 14px;
+      }
+
+      @include max_374 {
+        margin-right: 5px;
+      }
+    }
+
+    .btn-preview {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      width: 101px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+
+      .plus {
+        margin-left: 4px;
+        font-size: 29px;
+      }
+
+      @include max_1669 {
+        width: 101px;
+        height: 47px;
+        margin-right: 14px;
+      }
+
+      @include max_374 {
+        margin-right: 5px;
+      }
+    }
+
+    .btn-edit {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      width: 106px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+
+      @include max_1669 {
+        width: 105px;
+        height: 47px;
+        margin-right: -7px;
+      }
+    }
+  }
+
+  &__description {
+    margin: 24px 3px 0 -2px;
+
+    @include max_1669 {
+      margin: 24px 10px 0 -2px;
+    }
+
+    @include max_413 {
+      margin: 24px -2px 0 -2px;
+    }
+
+    @include max_374 {
+      margin: 24px 0 0 -2px;
+    }
+  }
+
+  &__date {
+    margin-bottom: 5px;
+  }
+
+  &__label {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 7px;
+  }
+
+  &__value {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+.stories {
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 31px;
+    width: 100%;
+
+    @include max_1669 {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .btn-add {
+      display: flex;
+      flex-direction: row;
+      width: 120px;
+      height: 47px;
+      line-height: 47px;
+      margin-right: 265px;
+
+      @include max_1669 {
+        order: 3;
+        margin: 20px 0 0 18px;
+      }
+
+      .add-icon {
+        width: 22px;
+        height: 16px;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-right: 294px;
+
+    @include max_1669 {
+      margin-right: 0;
+      width: 100%;
+    }
+
+    .ask-icon {
+      width: 19px;
+      height: 19px;
+      margin-right: 10px;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .description {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+
+      @include max_1669 {
+        text-align: center;
+        margin-top: 6px;
+      }
+    }
+  }
+
+  &__control {
+    display: flex;
+    flex-direction: row;
+    margin-right:25px;
+
+    @include max_1669 {
+      order: 2;
+      margin: 20px 15px 0 0px;
+    }
+
+    .carousel-arrow {
+      width: 20px;
+      height: 19px;
+    }
+
+    .control__left, .control__right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 47px;
+      height: 40px;
+      border: 1px solid #053148;
+      background-color: #053148;
+      border-radius: 10px;
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid $main-color;
+        background-color: $main-hover-color;
+      }
+
+      &.disabled {
+        opacity: 0.2;
+
+        &:hover {
+          cursor: default;
+          border: 1px solid #053148;
+          background-color: #053148;
+        }
+      }
+    }
+
+    .control__left {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .control__right {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    .separator {
+      content: '';
+      height: 40px;
+      border: 1px solid #083d58;
+
+      &.disabled {
+        opacity: 0.2;
+      }
+    }
+  }
+
+  &__items {
+    padding: 36px 26px 0 0;
+
+    @include max_1669 {
+      padding: 39px 15px 0 0;
+    }
+
+    &.notfound {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 376px;
+    margin-left: 20px;
+
+    @include max_1669 {
+      width: 270px;
+      margin-left: 10px;
+    }
+  }
+
+  &__notfound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("~@/assets/img/icon/story-slide.svg");
+
+    margin: 10px 0 0 25px;
+    width: 376px;
+    height: 121px;
+
+    @include max_1669 {
+      width: 270px;
+      background-size: contain;
+    }
+
+    .text {
+      font-size: 16px;
+    }
+  }
+
+  &__created {
+    color: #707070;
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 1px;
+    margin-bottom: 9px;
+
+    .label {
+      margin-left: 8px;
+    }
+  }
+
+  &__content{
+    height: 121px;
+    border: 1px solid $borderColorLight;
+    background-color: $default-color;
+    border-radius: 10px;
+    padding: 4px 3px 0 7px;
+
+    .btn-relative {
+      width: 81px;
+      height: 35px;
+      line-height: 35px;
+      display: flex;
+      flex-direction: row;
+      margin: 13px 57px 0 0;
+
+      .label-icon {
+        margin-left: 9px;
+      }
+    }
+
+    &:first-child {
+      margin-right: 27px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.story {
+  &__person {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.person {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin: 3px 8px 0 0;
+
+    .name {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+    }
+
+    .company {
+      font-size: 18px;
+      font-weight: 400;
+      color: #707070;
+    }
+  }
+
+  &__photo {
+    display: flex;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.approval {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__btn {
+    width: 94px;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 6px;
+    margin-top: 7px;
+  }
+
+  &__need {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid $default-color;
+    background-color: #d32020;
+    position: absolute;
+    top: 0;
+    right: -8px;
+  }
+}

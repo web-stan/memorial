@@ -1,0 +1,215 @@
+.payment-card {
+
+  $r: &;
+
+  width: 398px;
+  min-height: 307px;
+  padding-bottom: 35px;
+  box-shadow: 0px 3px 26px #00000029;
+  border-radius: $defaultRadiusBigger;
+  overflow: hidden;
+  // // transition: $defaultTransition;
+  transition: box-shadow 1s;
+
+
+  &:not(:first-child) {
+    margin-right: 15px;
+  }
+
+  &__top {
+    padding: 16px 5px 22px;
+    background-color: $site-color;
+    text-align: center;
+    letter-spacing: 1.2px;
+
+    @media (max-width: 767.99px) {
+      letter-spacing: 0;
+    }
+  }
+
+  &__title.second-text {
+    color: $default-color;
+    font-weight: 700;
+    letter-spacing: .6px;
+  }
+
+  //.payment-card__bottom
+  &__bottom {
+    padding: 0 43px;
+
+    @media (max-width: 840px) {
+      padding: 0 15px;
+    }
+  }
+
+  //.payment-card__price-container
+  &__price-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 14px;
+  }
+
+  &__price-payments {
+    direction: rtl;
+    font-size: 15px;
+    font-weight: $bold;
+
+    span {
+      margin: 0 5px;
+      font-weight: $bold;
+    }
+  }
+
+  &__price-amount {
+    font-size: 50px;
+    font-weight: $bold;
+    line-height: .9;
+  }
+
+  &__entirely {
+    margin-top: 2px;
+    font-size: 16px;
+    color: #707070;
+    text-align: center;
+
+    @media (max-width: 767.99px) {
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+  }
+
+  //.payment-card__list
+  &__list {
+    margin-top: 38px;
+    text-align: $textSide;
+  }
+
+  //.payment-card__item
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    line-height: 1.2;
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: .5px;
+
+    img {
+      align-self: flex-start;
+      margin-top: 4px;
+      margin-left: 5px;
+    }
+  }
+
+  //.payment-card--width
+  &--another.payment-card {
+    max-width: 345px;
+    width: 100%;
+    // transition: $defaultTransition;
+
+
+    #{$r}__bottom {
+      padding: 0 19px;
+
+      @media (max-width: 840px) {
+        padding: 0 15px;
+      }
+    }
+
+  }
+
+  &.active {
+    box-shadow: inset 0px 0px 0 3px #4f91b3;
+  }
+
+  //.payment-card__box-btn
+  &__box-btn {
+    padding: 0 19px;
+
+    @media (max-width: 840px) {
+      padding: 0 15px;
+    }
+  }
+
+  //.payment-card__btn
+  &__btn {
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 235px;
+    margin: 40px auto 0;
+    color: $main-color;
+    border: 1px solid $borderColorLight;
+    border-radius: $defaultRadiusBigger;
+    padding: 10px 50px 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: $defaultTransition;
+
+    @media (max-width: 574.98px) {
+      font-size: 16px;
+      padding: 10px 33px 10px 5px;
+    }
+
+    @media (max-width: 767.98px) {
+      width: unset;
+      width: 100%;
+    }
+
+
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 23px;
+      height: 23px;
+      top: 15px;
+      right: 22px;
+      border: 1px solid #083D58;
+      border-radius: 100%;
+      transition: $defaultTransition;
+      @media (max-width: 574.98px) {
+        right: 8px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 8px;
+      top: 20px;
+      right: 25px;
+      border-bottom: 2px solid #fff;
+      border-left: 2px solid #fff;
+      // transform: scale(1) rotate(-45deg);
+      transform: rotate(-45deg);
+      opacity: 0;
+      transition: $defaultTransition;
+      @media (max-width: 574.98px) {
+        right: 12px;
+      }
+    }
+
+  }
+
+  &.active {
+
+    //.payment-card__btn
+    #{$r}__btn {
+      background-color: $site-color;
+      color: $default-color;
+
+      &::before {
+        border-color: transparent;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+  }
+
+}

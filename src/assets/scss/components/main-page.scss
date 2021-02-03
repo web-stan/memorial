@@ -1,0 +1,267 @@
+//Section .about-person
+.about-person {
+  padding: 155px 0 130px;
+
+  //.about-person__container 
+  &__container {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__name {
+    margin-bottom: 35px;
+  }
+}
+
+//Section .life-story 
+.life-story {
+  padding: 64px 0 70px;
+  background-color: $main-color;
+
+  //.life-story__slider
+  &__slider {
+    margin-bottom: 80px;
+  }
+
+  //.life-story__title-box
+  &__title-box {
+    max-width: 860px;
+    margin: 0 auto 74px;
+    text-align: center;
+    color: $default-color;
+  }
+
+  &__timeline {
+    color: $default-color;
+  }
+
+  //.life-story__box-btn
+  &__box-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  //.life-story__button
+  &__button {
+    @include padding-x(15px);
+  }
+
+  .slick-list {
+    margin-left: -140px;
+  }
+
+  .slick-slide {
+    margin-left: 40px;
+
+    &:last-child .life-slider__item {
+
+      .life-slider__item-dot:before {
+        display: none;
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    left: -25px;
+    right: 0;
+    top: -80px;
+    width: 47px;
+    height: 40px;
+    background-color: #053148;
+    color: $default-color;
+    transition: $defaultTransition;
+  }
+
+  .slick-next {
+    right: 48px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .slick-prev {
+    right: 0px;
+    border-radius: 0 10px 10px 0;
+
+    svg {
+      transform: rotate(180deg)
+    }
+  }
+
+  .slick-next.slick-disabled,
+  .slick-prev.slick-disabled {
+    color: rgba($default-color, .16);
+    cursor: auto;
+  }
+
+}
+
+.life-slider {
+  &__item {
+    position: relative;
+    width: 344px;
+    height: 532px;
+
+    span {
+      position: absolute;
+      top: 360px;
+      right: 20px;
+      font-size: 32px;
+      font-weight: 700;
+      color: $default-color;
+      letter-spacing: -0.6px;
+    }
+  }
+
+  &__item-dot {
+    position: relative;
+    width: 23px;
+    height: 23px;
+    margin: 53px auto 16px;
+    border-radius: 100%;
+    background-color: $site-color;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 353.5px;
+      height: 1px;
+      top: 11px;
+      right: 27px;
+      background-color: rgba($default-color, .19);
+    }
+
+
+  }
+
+  &__item-years {
+    color: $default-color;
+    text-align: center;
+  }
+}
+
+// Section .family
+.family {
+  padding: 130px 0 145px;
+
+  //.family__title-wrapper
+  &__title-wrapper {
+    max-width: 710px;
+    margin: 0 auto 125px;
+    text-align: center;
+  }
+
+  ///.family__column
+  .family__column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  margin-bottom: 85px;
+
+    .margin-top-1 {
+      margin-top: 80px;
+    }
+
+    .margin-top-2 {
+      margin-top: -30px;
+    }
+
+    .margin-top-3 {
+      margin-top: -204px;
+    }
+  }
+}
+
+
+//.page-footer
+.page-footer {
+  padding: 35px 0 43px;
+  font-size: 14px;
+  color: $default-color;
+  background-color: $main-color;
+
+  &__title-wrapper {
+    width: 400px;
+    margin: 0 auto 35px;
+    text-align: center;
+  }
+
+  &__title-text {
+    height: 65px;
+    overflow: hidden;
+    font-size: $fontSmall;
+  }
+
+
+  //.page-footer__bottom
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+
+  //.main-page__logo
+  &__logo {
+    width: 58px;
+    margin: 0 auto 20px;
+  }
+
+  //.page-footer__btn
+  &__btn {
+    padding: 12px 21px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $default-color;
+    border: 1px solid rgba(#FFFFFF, .19);
+    border-radius: $defaultRadiusSmall;
+
+    &:first-child {
+      margin-left: 29px;
+    }
+
+    &:last-child {
+      margin-left: 90px;
+    }
+  }
+
+  //.page-footer__privacy-box
+  &__privacy-box {
+    a {
+      img {
+        margin-left: 5px;
+      }
+    }
+
+    a:not(:last-child) {
+      margin-left: 23px;
+    }
+  }
+}
+
+
+//  html[dir="ltr"] 
+html[dir="ltr"] {
+  .life-story {
+
+    .slick-slide {
+      margin-left: unset;
+      margin-right: 40px;
+
+      &:last-child .life-slider__item {
+
+        .life-slider__item-dot:before {
+          display: block;
+        }
+      }
+
+      &:first-child .life-slider__item {
+
+        .life-slider__item-dot:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+}

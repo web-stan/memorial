@@ -1,0 +1,16 @@
+stages:
+    - 'production deploy'
+
+capistrano:
+    stage: 'production deploy'
+    image: black15/capistrano-php:latest
+    only:
+        - master
+    script:
+        - mkdir ~/.ssh && echo "$SSH_KEY" | tr -d '\r' > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
+        - ssh-keyscan -H 18.192.112.233 >> ~/.ssh/known_hosts
+        - eval `ssh-agent -s`
+        - ssh-add ~/.ssh/id_rsa
+        - bundle install && bundle install --deployment
+        - cap production deploy
+    when: manual

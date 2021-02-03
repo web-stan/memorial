@@ -1,0 +1,199 @@
+  //.card
+  .card {
+    // width: 398px;
+    max-width: 398px;
+    border-radius: $defaultRadiusBigger;
+    overflow: hidden;
+    text-align: $textSide;
+
+    // @media (max-width: 1621px) {
+    @media (max-width: 1639px) {
+      margin-bottom: 15px;
+    }
+
+    //card__header
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    //.card__top
+    &__top {
+      position: relative;
+      height: 224px;
+      padding: 4px 15px 20px;
+      background-image: url(~@/assets/img/card-bg-1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    //.card__top--mod 
+    &__top--mod {
+      background-image: url(~@/assets/img/card-bg-2.png);
+    }
+
+    //.card__top--mod-2
+    &__top--mod-2 {
+      background-image: url(~@/assets/img/card-bg-3.png);
+    }
+
+    //.card__header-logo
+    &__header-logo {
+      width: 19px;
+      margin-left: -5px;
+      margin-top: -3px;
+    }
+
+    &__header-box {
+      display: flex;
+      padding-top: 5px;
+    }
+
+    &__top-arrow {
+      position: absolute;
+      width: 24px;
+      bottom: -1px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    //.card__link
+
+    &__link {
+      font-size: 5.5px;
+      margin-left: 14px;
+      color: $default-color;
+    }
+
+    &__link--bigger {
+      font-size: 7px;
+      margin-right: -3px;
+      letter-spacing: .28px;
+    }
+
+    //.card__main
+    &__main {
+      color: $default-color;
+      text-align: center;
+    }
+
+    //.card__img-wrapper
+    &__img-wrapper {
+      width: 93px;
+      margin: 15px auto 0;
+      border-radius: $defaultRadiusSmall;
+      overflow: hidden;
+    }
+
+    &__foto-caption {
+      font-size: 8px;
+    }
+
+    &__name {
+      margin-top: 3px;
+      font-size: 20px;
+      font-weight: $bold;
+      letter-spacing: 1.3px;
+
+      span {
+        margin-left: -16px;
+        margin-right: -6px;
+        color: rgba(255, 255, 255, .59);
+        font-size: 5px;
+        vertical-align: baseline;
+      }
+    }
+
+    &__foto-years {
+      margin-top: 4px;
+      font-size: 8px;
+      color: rgba(255, 255, 255, .59);
+    }
+
+    //.card__footer
+    &__footer {
+      display: flex;
+      justify-content: flex-start;
+      color: $default-color;
+      text-align: $textSide;
+      font-size: 7px;
+    }
+
+    &__footer-left {
+      width: 100px;
+      padding-right: 10px;
+      border-right: 1px solid rgba(255, 255, 255, .59);
+    }
+
+    &__footer-quotes {
+      width: 8px;
+      margin-left: auto;
+      margin-bottom: 3px;
+    }
+
+    &__footer-small-foto {
+      width: 27px;
+      padding-left: 2px;
+      text-align: right;
+
+      img {
+        width: 15px;
+      }
+    }
+
+    &__footer-foto-caption {
+      color: rgba(255, 255, 255, .59);
+      font-size: 5px;
+
+      span {
+        display: block;
+        text-decoration: underline;
+        text-decoration-color: rgba(255, 255, 255, .59);
+      }
+    }
+
+    //card__bottom
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      // align-items: flex-end; //add
+      align-items: flex-start;
+      min-height: 237px;
+      padding: 15px 23px 35px 23px;
+      background-color: $default-color;
+    }
+
+    &__bottom-header {
+      margin-bottom: 9px;
+      letter-spacing: 1.5px;
+    }
+
+    //.card__bottom-text
+    &__bottom-text {
+      margin-bottom: 15px;
+      line-height: 1.38;
+    }
+
+    //.card__button
+    &__button {
+      margin-top: auto;
+      font-weight: 700;
+    }
+
+    //.card__name--mod
+    &__name--mod {
+      margin-top: 62px;
+      font-size: 24px;
+      text-align: $textSide;
+      line-height: .9;
+      letter-spacing: 0;
+    }
+
+    &__foto-years--mod {
+      text-align: $textSide;
+    }
+
+    &__footer--mod {
+      margin-top: 43px;
+    }
+  }

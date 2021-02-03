@@ -1,0 +1,160 @@
+/* Mixins:
+  ========================================================================== */
+
+@mixin padding-x($value1, $value2: '') {
+  padding-right: $value1;
+
+  @if $value2=='' {
+    padding-left: $value1;
+  }
+
+  @else {
+    padding-left: $value2;
+  }
+}
+
+@mixin padding-y($value1, $value2: '') {
+  padding-top: $value1;
+
+  @if $value2=='' {
+    padding-bottom: $value1;
+  }
+
+  @else {
+    padding-bottom: $value2;
+  }
+}
+
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+// size to one line
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// placeholder helper
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+
+  :-moz-placeholder {
+    @content;
+  }
+
+  ::-moz-placeholder {
+    @content;
+  }
+
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+/* Fonts Helpers:
+   ========================================================================== */
+
+/*
+  By default template support only modern format fonts
+  Without svg. Only: .woff, .woffs
+  if ypu need svg comments lines bellow and uncomments "Fonts helper all format fonts"
+
+  Usage:
+    1. Put your font to `src/assets/fonts/FOLDERNAME/FONTNAME`
+      FOLLOW: Files Required
+      Example: .woff, .woffs formats
+    2. Go to fonts.scss
+    3. Use mixon
+      Example: @include font-face("OpenSans", "../fonts/OpenSans/opensans");
+
+    Required parameters: @family, @family
+    Minor parameters: @weight, @style, @pipeline
+
+    Example Base:
+      @include font-face("OpenSans", "../fonts/OpenSans/opensans");
+    Example Situation:
+      @include font-face("OpenSans", "../fonts/OpenSans/opensansItalic", 400, italic);
+*/
+
+// Default: For modern format fonts
+// Files Required: .woff, .woffs
+
+@mixin font-face($font-family,
+  $file-path,
+  $weight: normal,
+  $style: normal,
+  $asset-pipeline: false) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+
+    src: url('#{$file-path}.woff') format('woff'),
+    url('#{$file-path}.woff2') format('woff2');
+  }
+}
+
+@mixin max_1669 {
+  @media (max-width: 1669px) { @content; }
+}
+
+@mixin max_1400 {
+  @media (max-width: 1400px) { @content; }
+}
+
+@mixin max_767 {
+  @media (max-width: 767px) { @content; }
+}
+
+@mixin max_413 {
+  @media (max-width: 413px) { @content; }
+}
+
+@mixin max_374 {
+  @media (max-width: 374px) { @content; }
+}
+
+@mixin min_1670 {
+  @media (min-width: 1670px) { @content; }
+}
+
+@mixin min_768 {
+  @media (min-width: 768px) { @content; }
+}
+
+@mixin min_768_max_1669 {
+  @media (min-width: 768px) and (max-width: 1669px) { @content; }
+}
+
+@mixin min_768_max_1400 {
+  @media (min-width: 768px) and (max-width: 1400px) { @content; }
+}
+
+@mixin min_768_max_925 {
+  @media (min-width: 768px) and (max-width: 925px) { @content; }
+}
+
+$indentationMax: 500;
+$indentationOffset: 1;
+
+@mixin z-index($className, $styleName) {
+  $i: 0;
+  @while $i <= $indentationMax {
+    #{$className + $i} {
+      #{$styleName}: #{$i};
+    }
+    $i: $i + $indentationOffset;
+  }
+}

@@ -1,0 +1,152 @@
+.btn {
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__primary {
+    background-color: $main-color;
+    color: $default-color;
+
+    &:hover {
+      background-color: $main-hover-color;
+    }
+  }
+
+  &__primary-2 {
+    background-color: $site-color;
+    color: $default-color;
+
+    &:hover {
+      background-color: $site-color-hover;
+    }
+  }
+
+  &__second {
+    background-color: transparent;
+    border: 2px solid $main-color;
+    color: $main-color;
+
+    &:hover {
+      border-color: $site-color;
+      color: $site-color;
+    }
+  }
+
+  &__third {
+    background-color: transparent;
+    border: 1px solid $main-color;
+    color: $main-color;
+
+    &:hover {
+      border-color: $site-color;
+      color: $site-color;
+    }
+  }
+
+  &__create {
+    background-color: $help-color;
+    color: $main-color;
+
+    &:hover {
+      background-color: $help-color-hover;
+    }
+  }
+
+  &__label {
+    font-size: 18px;
+    background-color: $default-color;
+    color: $main-color;
+    border-radius: 10px;
+    border: solid 1px $borderColorLight;
+
+    &:hover {
+      border: solid 1px $site-color
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__globe {
+    &-blue {
+      width: 20px;
+      height: 20px;
+      background-image: url("~@/assets/img/icon/globe-icon-blue.svg");
+    }
+  }
+
+  &__desktop{
+    &-blue {
+      background-image: url("~@/assets/img/icon/desktop-blue.svg");
+
+    }
+  }
+
+  &__edit {
+    background-image: url("~@/assets/img/icon/edit.svg");
+  }
+
+  &__add {
+    &-blue {
+      background-image: url("~@/assets/img/icon/person-add.svg");
+    }
+  }
+
+  &__info {
+    background-image: url("~@/assets/img/icon/ask-yelow.svg");
+
+    &:hover {
+      cursor: help;
+    }
+  }
+
+  &__arrow {
+    background-image: url("~@/assets/img/icon/arrow.svg");
+
+    &.right {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__label {
+    &-blue {
+      display: flex;
+      width: 20px;
+      height: 21px;
+      background-image: url("~@/assets/img/icon/label-blue.svg");
+    }
+  }
+}
+
+.caret {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background-image: url("~@/assets/img/icon/arrow-down-blue.svg");
+  transform: rotate(270deg);
+
+  &.open {
+    transform: rotate(90deg);
+  }
+}
+
+.plus {
+  &:after {
+    content: '+';
+  }
+
+  &-blue {
+    color: $main-color;
+  }
+}

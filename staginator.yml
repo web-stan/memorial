@@ -1,0 +1,8 @@
+deploy_callbacks:
+  after_clone:
+    - 'cp /stag/shared/000-default.conf /etc/apache2/sites-enabled/000-default.conf'
+    - 'rm -rf /stag/new/node_modules'
+    - 'cd /stag/new && npm install'
+    - 'cd /stag/new && npm run build'
+  after_deploy:
+    - 'cp /stag/shared/.htaccess /stag/www/dist/.htaccess'

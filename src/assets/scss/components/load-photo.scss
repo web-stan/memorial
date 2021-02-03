@@ -1,0 +1,62 @@
+//.load-photo
+.load-photo {
+    position: relative;
+    // width: 100%;
+    width: 380px;
+    border: 1px solid $borderColorLight;
+    border-radius: $defaultRadiusBigger;
+    height: 165px;
+    background: #ffffff;
+    overflow: hidden;
+    // display: none;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__img-box {
+        height: 163px;
+        width: 165px;
+        flex-shrink: 0;
+        img {
+            height: 100%;
+        }
+    }
+
+    &__text-box {
+        padding: 10px 17px 10px 5px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        font-size: 14px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+}
+
+html[dir="ltr"] {
+    .load-photo__text-box {
+        padding: 10px 5px 10px 17px;
+    }
+
+    .load-photo__close {
+        position: absolute;
+        top: 10px;
+        left: unset;
+        right: 10px;
+        cursor: pointer;
+    }
+}

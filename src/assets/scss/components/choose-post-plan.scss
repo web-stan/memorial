@@ -1,0 +1,147 @@
+.post-plan {
+
+  .ask-yellow {
+    background-color: #083D58; background-clip: content-box;
+  }
+  &__wrapper {
+    max-width: 730px;
+    width: 100%;
+  }
+
+  &__title-wrapper {
+    max-width: 645px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__decor {
+    max-width: 460px;
+    height: 1px;
+    margin: 0 auto 20px;
+    background-color: $decorColor;
+  }
+
+  &__card-conatiner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  //.post-plan__options
+  &__options {
+    margin: 35px auto 35px;
+    padding-bottom: 35px;
+    border-bottom: $defaultLine;
+  }
+
+  &__options-title {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__options-wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 490px;
+    margin: 0 auto;
+    @media (max-width: 574.98px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__options-item {
+    position: relative;
+    width: 50%;
+    font-size: $fontSmall;
+    padding-right: 25px;
+    padding-left: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media (max-width: 574.98px) {
+      width: 245px;
+
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+
+    span {
+      display: block;
+      color: #6B696A;
+      font-size: 14px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 23px;
+      height: 23px;
+      top: 0;
+      right: -5px;
+      border: 1px solid #083D58;
+      border-radius: 100%;
+      transition: $defaultTransition;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 8px;
+      top: 5px;
+      right: -1px;
+      border-bottom: 2px solid #fff;
+      border-left: 2px solid #fff;
+      transform: scale(0) rotate(-25deg);
+      transition: $defaultTransition;
+    }
+
+    &.active {
+      &::before {
+        background-color: #4f91b3;
+        border: 1px solid #4f91b3;
+
+      }
+
+      &::after {
+        transform: scale(1) rotate(-45deg);
+      }
+    }
+  }
+
+  &__options-img {
+    position: absolute;
+    top: 0;
+    left: -13px;
+  }
+}
+
+html[dir="ltr"] {
+  .post-plan__title-wrapper {
+    max-width: 915px;
+  }
+
+  .create-memorial__title-text--padding {
+    padding: 0 10px;
+  }
+  .post-plan__options-first {
+    order: -1;
+  }
+  .post-plan__options-item:first-child {
+    margin-bottom: unset;
+  }
+
+  .post-plan__options-item:last-child {
+    margin-bottom: 20px;
+  }
+}

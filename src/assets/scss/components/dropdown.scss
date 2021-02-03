@@ -1,0 +1,64 @@
+@import "~@/assets/scss/utils/vars";
+@import "~@/assets/scss/utils/gui";
+
+.dropdown {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+
+  &__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 100%;
+    padding: 5px 8px 5px 5px;
+
+    background-color: transparent;
+    border: 1px solid $main-color;
+    color: $main-color;
+    border-radius: 4px;
+
+    &:hover {
+      cursor: pointer;
+      border-color: $site-color;
+      color: $site-color;
+    }
+  }
+
+  &__text {
+    margin-right: 5px;
+    letter-spacing: -1.6px;
+  }
+
+  &__items {
+    margin-top: 5px;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background-color: $default-color;
+    box-shadow: 0 3px 6px #00000029;
+    border: 1px solid #CCD7DD;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

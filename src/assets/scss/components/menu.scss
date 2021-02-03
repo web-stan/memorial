@@ -1,0 +1,126 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #083d58;
+  z-index: 101;
+
+  // display: none; 
+
+  // @media (max-width: 767.98px) {
+  //   display: block;
+  // }
+
+  &__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 23px 15px 0;
+  }
+
+  //.menu__top-box
+  &__top-box {
+    display: flex;
+  }
+
+  &__btn {
+    height: 38px;
+    margin-right: 9px;
+    padding: 8px 15px;
+    border: 1px solid #FFFFFF;
+    font-size: 14px;
+    border-radius: 4px;
+    color: $default-color;
+    letter-spacing: .42px;
+    cursor: pointer;
+  }
+
+  &__humburger {
+    margin-top: -11px;
+    cursor: pointer;
+  }
+
+  //.menu__logo-box
+  &__logo-box {
+    position: absolute;
+    left: 50%;
+    top: 18px;
+    transform: translateX(-50%);
+  }
+
+  &__middle {
+    max-width: 272px;
+    margin: 0 auto 35px;
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15.5px;
+    span{
+      font-size: 14px;
+      font-weight: 400;
+      margin-right: 5 px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+
+  &__button--mod {
+    margin-bottom: 38px;
+  }
+
+  &__bottom {
+    padding: 38px 0 41px;
+    border-top: 1px solid $borderColorLight;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    color: $default-color;
+    text-align: center;
+    letter-spacing: .6px;
+  }
+
+  &__conection {
+    width: 296px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__relink {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9EEF0;
+    border-radius: $defaultRadiusBigger;
+  }
+
+  &__conection-item {
+    text-align: center;
+
+    span {
+      color: $default-color;
+      font-size: 14px;
+    }
+  }
+}
+
+html[dir="ltr"] {
+  .menu__btn {
+    margin-right: unset;
+    margin-left: 9px;
+  } 
+}

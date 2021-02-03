@@ -1,0 +1,373 @@
+.create-memorial {
+  display: flex;
+  flex-direction: row-reverse;
+  height: auto;
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 840px) {
+    // height: 100vh;
+  }
+
+  &__container {
+    width: calc(100% - 616px);
+    padding: 50px;
+
+    @media (max-width: 1300px) {
+      width: 100%;
+    }
+
+    @media (max-width: 574.98px) {
+      padding: 15px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapper {
+      max-width: 460px;
+      width: 100%;
+
+      &__inputs {
+        margin-top: 36px;
+        min-height: 646px;
+        display: flex;
+        padding: 25px 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 26px #00000029;
+        border-radius: 10px;
+        border-top: 15px solid #4F91B3;
+
+        @media (max-width: 574.98px) {
+          padding: 20px;
+        }
+
+        form {
+          width: 100%;
+        }
+
+        &.height {
+          min-height: auto;
+          padding-bottom: 20px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 53px;
+  }
+
+  // &__form__wrapper_desc {
+  //   max-width: 460px;
+  //   margin: 0 auto;
+  //   text-align: center;
+  // }
+
+  //.create-memorial__title
+  &__title {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  //.create-memorial__title-text
+  &__title-text {
+    margin-top: 15px;
+  }
+
+  //.create-memorial__decor
+  &__decor {
+    height: 1px;
+    background-color: $decorColor;
+  }
+
+
+  //.create-memorial__sidebar
+  &__sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    // min-width: 616px;
+    width: 616px;
+    background-color: #083D58;
+    color: white;
+
+    @media (max-width: 1300px) {
+      position: unset;
+      // min-width: unset;
+      width: 100%;
+    }
+
+    @media (max-width: 840px) {
+      flex: 1;
+    }
+
+    &__wrapper {
+      position: relative;
+      padding: 77px 55px 55px 55px;
+    }
+  }
+
+  //.create-memorial__sidebar-info
+  &__sidebar-info {
+    position: absolute;
+    width: 290px;
+    overflow: hidden;
+    bottom: 55px;
+    left: 0;
+  }
+
+  &__sidebar-person {
+    font-size: 44px;
+    font-weight: 700;
+
+    span {
+      font-size: 14px;
+      vertical-align: bottom;
+    }
+  }
+
+  &__sidebar-date {
+    font-size: 24px;
+  }
+
+  //.create-memorial__sidebar-main
+  &__sidebar-main {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  &__sidebar-img {
+    position: relative;
+  }
+
+  &__box {
+    position: absolute;
+    right: 9%;
+    bottom: 10%;
+
+    @media (max-width: 574.98px) {
+      bottom: 11%;
+      right: 8%;
+    }
+
+    span {
+      font-size: 14px;
+      vertical-align: bottom;
+
+      @media (max-width: 574.98px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 35px;
+    font-weight: 700;
+
+    @media (max-width: 574.98px) {
+      font-size: 22px;
+    }
+  }
+
+  &__years {
+    font-size: 22px;
+
+    @media (max-width: 574.98px) {
+      font-size: 18px;
+    }
+  }
+
+  &__sidebar-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    @media (max-width: 767.98px) {
+      font-size: 36px;
+    }
+  }
+
+  //.create-memorial__list
+  &__list {
+    padding-right: 27px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 83%;
+      top: 10px;
+      right: 0;
+      width: 2px;
+      background-color: #727e85;
+    }
+  }
+
+  //.create-memorial__list-item 
+  &__list-item {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: $defaultTransition;
+
+    @media (max-width: 574.98px) {
+      font-size: 22px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 9px;
+      right:  -31.5px;
+      content: '';
+      width: 12px;
+      height: 12px;
+      border: 1px solid #4F91B3;
+      background-color: #083d58;
+      border-radius: 100%;
+      z-index: 1;
+      transition: $defaultTransition;
+    }
+
+    //.create-memorial__list-item visited
+    &.active {
+      font-weight: 700;
+
+      &::after {
+        top: 4px;
+        right: -38px;
+        width: 24px;
+        height: 24px;
+        background: #4F91B3;
+      }
+    }
+
+    &.visited {
+      color: #4F91B3;
+
+      &::after {
+        background-color: #4f91b3;
+      }
+    }
+  }
+}
+
+// invite-relatives.html
+.create-memorial__form__wrapper_desciption {
+  max-width: 460px;
+  margin: 0 auto;
+  text-align: center;
+
+  .create-memorial__decor {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+
+  .create-memorial__title-text--width {
+    max-width: 460px;
+    margin: 15px auto 0;
+  }
+}
+
+html[dir="ltr"] {
+
+  .create-memorial__form__wrapper_desciption {
+    max-width: 880px;
+    text-align: center;
+  }
+
+  .create-memorial__sidebar {
+    left: 0;
+    right: unset;
+  }
+
+  .create-memorial__box {
+    right: unset;
+    left: 9%;
+    bottom: 10%;
+  }
+
+
+  //.create-memorial__list
+  .create-memorial__list {
+    padding-right: unset;
+    padding-left: 27px;
+    position: relative;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 83%;
+      top: 10px;
+      right: unset;
+      left: 0;
+      width: 2px;
+      background-color: #727e85;
+    }
+  }
+
+  //.create-memorial__list-item 
+  .create-memorial__list-item {
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      top: 9px;
+      right: unset;
+      left: -31.5px;
+      content: '';
+      width: 12px;
+      height: 12px;
+      border: 1px solid #4F91B3;
+      background-color: #083d58;
+      border-radius: 100%;
+      z-index: 1;
+      transition: $defaultTransition;
+    }
+
+    //.create-memorial__list-item visited
+    &.active {
+      font-weight: 700;
+
+      &::before {
+        top: 4px;
+        right: unset;
+        left: -38px;
+        width: 24px;
+        height: 24px;
+        background: #4F91B3;
+      }
+    }
+
+    &.visited {
+      color: #4F91B3;
+
+      &::before {
+        background-color: #4f91b3;
+      }
+    }
+  }
+
+    //.create-memorial__sidebar-info
+    .create-memorial__sidebar-info {
+      left: unset;
+      right: 0;
+    }
+}

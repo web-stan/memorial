@@ -1,0 +1,295 @@
+html[dir="ltr"] {
+
+  .message {
+    text-align: left;
+    padding-left: 0;
+    left: unset;
+    bottom: 30px;
+    right: 30px;
+
+    .message__icon-box {
+      margin-left: 0;
+      margin-right: 16.5px;
+    }
+
+    .message__wrapper {
+      justify-content: flex-start;
+    }
+
+    .message__box {
+      text-align: left;
+    }
+  }
+
+  //-----.help-center-----
+  .help-center {
+    left: unset;
+    right: 25px;
+
+    .help-center__item-text {
+      order: 1;
+    }
+
+    .help-center__messenger-item {
+      &--1 {
+        order: 1;
+      }
+
+      &--2 {
+        order: 2;
+      }
+
+      &--3 {
+        order: 3;
+      }
+
+      &--4 {
+        order: 4;
+      }
+    }
+  }
+
+  .header-screen__left {
+    order: 1;
+  }
+
+  .header-screen__button {
+    margin-right: unset;
+    margin-left: 32px;
+
+    @media (max-width: 767.98px) {
+      margin-right: unset;
+      margin-left: 9px;
+    }
+  }
+
+  .header-screen__dropdown:first-child {
+    margin-left: 0;
+    margin-right: 65px;
+
+  }
+
+  .major-screen-dropdown {
+    left: unset;
+    right: 0;
+  }
+
+  .major-screen-services__dropdown {
+    left: 18px;
+    right: unset;
+  }
+
+  // .major-screen-about__dropdown {
+  //   left: -73px;
+  // }
+
+  .memorial-title {
+    max-width: 820px;
+
+    @media (max-width: 767.98px) {
+      margin-top: 0;
+    }
+  }
+
+  .memorial-title__title {
+    @media (max-width: 767.98px) {
+      font-size: 56px;
+    }
+
+    @media (max-width: 1299.98px) {}
+  }
+
+  // ----- SERVICE  SECTION -----
+  .service .service__info {
+    text-align: left;
+
+    // @media (max-width: 1299.98px) {
+    @media (max-width: 1639px) {
+      text-align: center;
+    }
+  }
+
+  .service__block--padding {
+    padding-top: 7%;
+    padding-left: 6%;
+    padding-right: 45px;
+
+    // @media (max-width: 1299.98px) {
+    @media (max-width: 1639px) {
+      padding: 44px 35px 0;
+    }
+  }
+
+  .service__row--order .service__block--padding {
+    padding-top: 7%;
+    padding-right: 6%;
+    padding-left: 45px;
+
+    // @media (max-width: 1299.98px) {
+    @media (max-width: 1639px) {
+      padding: 44px 35px 0;
+    }
+  }
+
+
+  // <!-- ---- Section EXAMPLES ---- -->
+  .examples {
+
+    .card {
+      &--4 {
+        order: 4;
+      }
+
+      &--3 {
+        order: 3;
+      }
+
+      &--2 {
+        order: 2;
+      }
+
+      &--1 {
+        order: 1;
+      }
+    }
+
+    .card__header-box {
+      order: -1;
+    }
+
+    .card__footer {
+      justify-content: flex-end;
+    }
+
+    .card__footer-left {
+      order: -1;
+    }
+
+    .card__bottom {
+      align-items: flex-start;
+    }
+
+    .card__bottom-text {
+      text-align: left;
+    }
+  }
+
+  // <!-- Section PAYMENT -->
+  .payment-card:not(:first-child) {
+    margin-right: 0;
+  }
+
+  .payment-card:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .payment-card__price-payments {
+    direction: ltr;
+  }
+
+  .payment-card__price-amount {
+    order: -1;
+  }
+
+  .payment-card__list {
+    text-align: left;
+  }
+
+  .payment-card__item {
+    img {
+      align-self: flex-start;
+      margin-top: 4px;
+      margin-right: 5px;
+    }
+  }
+
+  // <!-- Section NEED-HELP-FORM -->
+  .need-help-form {
+    .help-form__right {
+      text-align: left;
+      padding-left: 0;
+      padding-right: 15px;
+
+      @media (max-width: 840px) {
+        margin-bottom: 45px;
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+
+    .help-form__title {
+      text-align: left;
+    }
+
+    .help-form__link-wrapper {
+      margin-left: 0;
+      margin-right: auto;
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+
+      @media (max-width: 840px) {
+        margin: 0 auto;
+        justify-content: space-between;
+      }
+    }
+
+    .help-form__label {
+      justify-content: flex-end;
+    }
+
+    .help-form__label:after {
+      margin-left: 0;
+      margin-right: 7px;
+    }
+
+    .help-form__label:before {
+      left: 1%;
+    }
+
+    // .help-form__link-box-3 {
+    //   display: none;
+    // }
+
+    .help-form__link-box {
+      margin-left: 25px;
+
+
+      @media (max-width: 840px) {
+        margin-left: 0;
+      }
+    }
+
+    .help-form__input {
+      text-align: left;
+    }
+
+    .help-form__textarea {
+      &::placeholder {
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  // Section FOOTER
+  .footer {
+    .footer__title-wrapper {
+
+      @media (max-width: 840px) {
+        margin: 0 auto 0 0;
+        text-align: left;
+      }
+    }
+
+    .footer__link {
+      margin: 0;
+    }
+
+    .footer__link--2 {
+      display: none;
+    }
+
+    .footer__link--1 {
+      margin-right: 160px;
+    }
+  }
+}

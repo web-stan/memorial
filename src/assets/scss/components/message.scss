@@ -1,0 +1,75 @@
+.message {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: #083D58;
+    border-radius: 30px;
+    letter-spacing: $letterSpacing;
+    padding-left: 20px;
+    overflow: hidden;
+    z-index: 99;
+    transition: $defaultTransition;
+    cursor: pointer;
+  
+    @media (max-width: 574.98px) {
+      bottom: 23px;
+      left: 15px;
+    }
+  
+    &:hover {
+      width: 294px;
+  
+      //.message__box
+      .message__box {
+        font-size: inherit;
+      }
+  
+      .message__text {
+        font-size: 16px;
+      }
+    }
+  
+    //.message__icon-box
+    &__icon-box {
+      margin-left: 16.5px;
+      flex-shrink: 0;
+    }
+  
+    //.message__icon-box.help-icon
+    .help-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+    }
+  
+    //.message__wrapper
+    &__wrapper {
+      display: flex;
+      // justify-content: flex-end; //add
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    //.message__box
+    &__box {
+      text-align: $textSide;
+      padding: 3px 0;
+      font-size: 0;
+      transition: $defaultTransition;
+    }
+  
+    &__title {
+      font-weight: $bold;
+    }
+  
+    &__text {
+      font-size: 0;
+      letter-spacing: -0.48px;
+      transition: $defaultTransition;
+    }
+  }
+  

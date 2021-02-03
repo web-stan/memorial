@@ -1,0 +1,139 @@
+.full-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  color: $default-color;
+  background-image: url(~@/assets/img/card-bg-2.png);
+  padding: 40px 81px 60px 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  text-align: $textSide;
+
+  &__top-arrow {
+    position: absolute;
+    width: 75px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  //full-card__header
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  //.fuul-card__header-logo
+  &__header-logo {
+    width: 85px;
+  }
+
+  &__header-box {
+    display: flex;
+    padding-top: 7px;
+  }
+
+  //.full-card__link
+  &__link {
+    font-size: 22px;
+    letter-spacing: .66px;
+    color: $default-color;
+    line-height: 1.7;
+  }
+
+  &__link--bigger {
+    margin-left: 40px;
+    padding-left: 30px;
+    border-left: 1px solid rgba(#ffff, .2);
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: .28px;
+    line-height: 1;
+  } 
+
+  &__link--margin {
+    margin-left: 50px;
+  }
+
+  &__name {
+    // margin-top: 3px;
+    font-size: 120px;
+    font-weight: $bold;
+    letter-spacing: 0;
+    line-height: .8;
+
+    span {
+      margin-left: -20px;
+      margin-right: -20px;
+      font-size: 30px;
+      vertical-align: baseline;
+    }
+  }
+
+  &__foto-years {
+    margin-top: 35px;
+    font-size: 32px;
+  }
+
+  //.full-card__footer
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    color: $default-color;
+    text-align: $textSide;
+    font-size: 34px;
+  }
+
+  &__footer-wrapper {
+    display: flex;
+
+  }
+
+  &__footer-left {
+    max-width: 550px;
+    padding-right: 25px;
+    border-right: 1px solid rgba(255, 255, 255, .59);
+  }
+
+  &__footer-quotes {
+    width: 22px;
+    margin-left: auto;
+    margin-bottom: 3px;
+  }
+
+  //.full-card__footer-text
+  &__footer-text {
+    height: 70px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__footer-small-foto {
+    width: 105px;
+    padding-left: 2px;
+    text-align: right;
+
+    img {
+      width: 51px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__footer-foto-caption {
+    font-size: 18px;
+
+    span {
+      display: block;
+      text-decoration: underline;
+      text-decoration-color: rgba(255, 255, 255, .59);
+    }
+  }
+}
