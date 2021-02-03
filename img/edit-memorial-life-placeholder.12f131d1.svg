@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="379" height="436" viewBox="0 0 379 436">
+    <defs>
+        <filter id="_60b1b358837685411acec18b6a3e032e" width="284" height="338" x="0" y="98" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="_60b1b358837685411acec18b6a3e032e-2" width="284" height="338" x="48" y="49" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="_60b1b358837685411acec18b6a3e032e-3" width="284" height="338" x="95" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-3" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-9{stroke:none}.cls-10{fill:none}
+        </style>
+    </defs>
+    <g id="Group_13009" transform="translate(-720 -1919)">
+        <g filter="url(#_60b1b358837685411acec18b6a3e032e)" transform="translate(720 1919)">
+            <g id="_60b1b358837685411acec18b6a3e032e-4" fill="#083d58" stroke="#4f91b3" opacity="0.408" transform="translate(9 104)">
+                <rect width="266" height="320" class="cls-9" rx="20"/>
+                <rect width="265" height="319" x=".5" y=".5" class="cls-10" rx="19.5"/>
+            </g>
+        </g>
+        <g filter="url(#_60b1b358837685411acec18b6a3e032e-2)" transform="translate(720 1919)">
+            <g id="_60b1b358837685411acec18b6a3e032e-5" fill="#083d58" stroke="#4f91b3" opacity="0.618" transform="translate(57 55)">
+                <rect width="266" height="320" class="cls-9" rx="20"/>
+                <rect width="265" height="319" x=".5" y=".5" class="cls-10" rx="19.5"/>
+            </g>
+        </g>
+        <g filter="url(#_60b1b358837685411acec18b6a3e032e-3)" transform="translate(720 1919)">
+            <g id="_60b1b358837685411acec18b6a3e032e-6" fill="#083d58" stroke="#4f91b3" transform="translate(104 6)">
+                <rect width="266" height="320" class="cls-9" rx="20"/>
+                <rect width="265" height="319" x=".5" y=".5" class="cls-10" rx="19.5"/>
+            </g>
+        </g>
+        <g id="Group_12458" transform="translate(-51 -175)">
+            <text id="_1964_-_1997" fill="#fff" font-family="AlmoniNeueDL4.0AAA-Regular, 'Almoni Neue DL 4.0 AAA'" font-size="30px" transform="translate(1008.5 2233.076)">
+                <tspan x="-64.301" y="0">1964 - 1997</tspan>
+            </text>
+            <g id="Ellipse_951" fill="#4f91b3" stroke="#083d58" stroke-linecap="round" stroke-width="4px" transform="translate(996 2174.516)">
+                <circle cx="11.5" cy="11.5" r="11.5" class="cls-9"/>
+                <circle cx="11.5" cy="11.5" r="13.5" class="cls-10"/>
+            </g>
+        </g>
+        <g id="Group_12457" transform="translate(-751.709 2037.012)">
+            <rect id="Rectangle_8" width="148.671" height="56" fill="#ffc44d" rx="4" transform="translate(1635.709 72.988)"/>
+            <text id="הוסף_סיפור" fill="#083d58" font-family="AlmoniNeueDL4.0AAA-Bold, 'Almoni Neue DL 4.0 AAA'" font-size="20px" font-weight="700" letter-spacing="0.03em" transform="translate(1700.709 106.988)">
+                <tspan x="-45.453" y="0">הוסף סיפור</tspan>
+            </text>
+            <path id="Path_6495" fill="#083d58" d="M13.914 6.846h-2.356v4.712H6.846v2.356h4.712v4.712h2.356v-4.712h4.712v-2.356h-4.712z" transform="translate(1745.754 89.143)"/>
+        </g>
+    </g>
+</svg>

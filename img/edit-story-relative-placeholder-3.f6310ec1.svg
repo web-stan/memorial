@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="554" height="452.78" viewBox="0 0 554 452.78">
+    <defs>
+        <filter id="Rectangle_2406" width="554" height="400" x="0" y="52.78" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="shutterstock_732336316" width="108.787" height="109.713" x="222.699" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-2{fill:#fff;stroke:#4f91b3}.cls-4{fill:#4f91b3;opacity:.999}.cls-5{stroke:none}.cls-6{fill:none}
+        </style>
+    </defs>
+    <g id="Group_12293" opacity="0.2" transform="translate(-131 -3269.22)">
+        <g filter="url(#Rectangle_2406)" transform="translate(131 3269.22)">
+            <g id="Rectangle_2406-2" class="cls-2" transform="translate(9 58.78)">
+                <rect width="536" height="382" class="cls-5" rx="20"/>
+                <rect width="535" height="381" x=".5" y=".5" class="cls-6" rx="19.5"/>
+            </g>
+        </g>
+        <g id="Group_12289" transform="translate(362.699 3275.22)">
+            <g id="Group_12253">
+                <g filter="url(#shutterstock_732336316)" transform="translate(-231.7 -6)">
+                    <g id="shutterstock_732336316-2" class="cls-2" transform="translate(231.7 6)">
+                        <rect width="90.787" height="91.713" class="cls-5" rx="45"/>
+                        <rect width="89.787" height="90.713" x=".5" y=".5" class="cls-6" rx="44.5"/>
+                    </g>
+                </g>
+                <path id="Path_6569" fill="#083d58" d="M186.192 155.33c0-4.473-.069-6.245-3.653-8.883-2.377-1.75-7.436-2.8-11.021-4.332-2.132-.913-2.507-3.966-2.3-7.511.068-1.155 4.85-4.721 4.85-14.692 0-5.366-3.471-9.978-10.618-9.978s-10.618 4.612-10.618 9.978c0 9.733 4.782 13.537 4.85 14.692.207 3.545-.168 6.6-2.3 7.511-3.585 1.534-8.644 2.582-11.02 4.332-3.584 2.638-3.653 4.41-3.653 8.883z" opacity="0.3" transform="translate(-118.176 -86.809)"/>
+            </g>
+        </g>
+        <g id="Group_12304" transform="translate(190.507 3421)">
+            <path id="Path_6539" d="M8.882-37.084a9.95 9.95 0 0 1 .656 3.392 14.515 14.515 0 0 1-1.86 6.346L2.262-16.678a9.187 9.187 0 0 1-2.79 3.009q-2.188 1.7-2.9 1.7-.985 0-.547-.985l2.681-9.519a24.685 24.685 0 0 0 .985-6.4 18.542 18.542 0 0 0-1.805-7.768q-.438-1.313.711-1.641l7.714-2.248q1.2-.328 1.587.547zm-16.576 0a12.259 12.259 0 0 1 .656 3.611 14.591 14.591 0 0 1-1.805 6.127l-5.142 10.668a9.187 9.187 0 0 1-2.79 3.009q-2.188 1.7-2.9 1.7-.821 0-.547-.985l2.462-9.519a25.4 25.4 0 0 0 .875-6.182 20.3 20.3 0 0 0-1.805-7.987q-.438-1.313.711-1.641l7.714-2.243q1.2-.328 1.587.547z" class="cls-4" transform="translate(426.433 40.62)"/>
+            <path id="Path_6540" d="M-19.626-15.521a9.95 9.95 0 0 1-.656-3.392 14.515 14.515 0 0 1 1.86-6.346l5.416-10.668a9.389 9.389 0 0 1 2.79-2.954q2.243-1.751 2.9-1.751.93 0 .547.985l-2.681 9.519a24.685 24.685 0 0 0-.985 6.4 18.542 18.542 0 0 0 1.805 7.769q.438 1.313-.711 1.641l-7.714 2.243q-1.2.328-1.587-.547zm16.576 0a11.869 11.869 0 0 1-.656-3.611A14.882 14.882 0 0 1-1.9-25.259l5.142-10.668a9.389 9.389 0 0 1 2.79-2.954q2.243-1.751 2.9-1.751.766 0 .547.985l-2.462 9.519a25.4 25.4 0 0 0-.875 6.182 20.029 20.029 0 0 0 1.805 7.987q.438 1.313-.711 1.641l-7.714 2.243q-1.2.328-1.587-.547z" class="cls-4" transform="translate(20.282 247.375)"/>
+        </g>
+    </g>
+</svg>

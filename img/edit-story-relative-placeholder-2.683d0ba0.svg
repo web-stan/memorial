@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="554" height="561.78" viewBox="0 0 554 561.78">
+    <defs>
+        <filter id="Rectangle_2407" width="554" height="509" x="0" y="52.78" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="shutterstock_732336316" width="108.787" height="109.713" x="222.642" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1{fill:#fff;stroke:#4f91b3}.cls-4{stroke:none}.cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="Group_12297" transform="translate(-821 -3186.22)">
+        <g filter="url(#Rectangle_2407)" transform="translate(821 3186.22)">
+            <g id="Rectangle_2407-2" class="cls-1" transform="translate(9 58.78)">
+                <rect width="536" height="491" class="cls-4" rx="20"/>
+                <rect width="535" height="490" x=".5" y=".5" class="cls-5" rx="19.5"/>
+            </g>
+        </g>
+        <g id="Group_12288" transform="translate(1052.642 3192.22)">
+            <g id="Group_12253">
+                <g filter="url(#shutterstock_732336316)" transform="translate(-231.64 -6)">
+                    <g id="shutterstock_732336316-2" class="cls-1" transform="translate(231.64 6)">
+                        <rect width="90.787" height="91.713" class="cls-4" rx="45"/>
+                        <rect width="89.787" height="90.713" x=".5" y=".5" class="cls-5" rx="44.5"/>
+                    </g>
+                </g>
+                <path id="Path_1578" fill="#083d58" d="M186.192 155.33c0-4.473-.069-6.245-3.653-8.883-2.377-1.75-7.436-2.8-11.021-4.332-2.132-.913-2.507-3.966-2.3-7.511.068-1.155 4.85-4.721 4.85-14.692 0-5.366-3.471-9.978-10.618-9.978s-10.618 4.612-10.618 9.978c0 9.733 4.782 13.537 4.85 14.692.207 3.545-.168 6.6-2.3 7.511-3.585 1.534-8.644 2.582-11.02 4.332-3.584 2.638-3.653 4.41-3.653 8.883z" opacity="0.3" transform="translate(-118.119 -86.809)"/>
+            </g>
+        </g>
+        <path id="dac50aad21d0d0e8bd7c968b78529264" fill="#4f91b3" d="M0 0H532V272H0z" opacity="0.1" transform="translate(832 3346)"/>
+    </g>
+</svg>

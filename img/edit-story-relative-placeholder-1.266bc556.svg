@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="554" height="266.78" viewBox="0 0 554 266.78">
+    <defs>
+        <filter id="Rectangle_2409" width="554" height="214" x="0" y="52.78" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="shutterstock_732336316" width="108.787" height="109.713" x="221.453" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Ellipse_425" width="36" height="36" x="132" y="175.78" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-3" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-2{fill:#fff;stroke:#4f91b3}.cls-6{fill:#4f91b3}.cls-8{fill:none}.cls-6,.cls-7{opacity:.7}.cls-11{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_12295" opacity="0.2" transform="translate(-1235.339 -3269.22)">
+        <g filter="url(#Rectangle_2409)" transform="translate(1235.34 3269.22)">
+            <g id="Rectangle_2409-2" class="cls-2" transform="translate(9 58.78)">
+                <rect width="536" height="196" class="cls-11" rx="20"/>
+                <rect width="535" height="195" x=".5" y=".5" class="cls-8" rx="19.5"/>
+            </g>
+        </g>
+        <g id="Group_12260" transform="translate(1465.792 3275.22)">
+            <g id="Group_12253">
+                <g filter="url(#shutterstock_732336316)" transform="translate(-230.45 -6)">
+                    <g id="shutterstock_732336316-2" class="cls-2" transform="translate(230.45 6)">
+                        <rect width="90.787" height="91.713" class="cls-11" rx="45"/>
+                        <rect width="89.787" height="90.713" x=".5" y=".5" class="cls-8" rx="44.5"/>
+                    </g>
+                </g>
+                <path id="Path_6568" fill="#083d58" d="M186.192 155.33c0-4.473-.069-6.245-3.653-8.883-2.377-1.75-7.436-2.8-11.021-4.332-2.132-.913-2.507-3.966-2.3-7.511.068-1.155 4.85-4.721 4.85-14.692 0-5.366-3.471-9.978-10.618-9.978s-10.618 4.612-10.618 9.978c0 9.733 4.782 13.537 4.85 14.692.207 3.545-.168 6.6-2.3 7.511-3.585 1.534-8.644 2.582-11.02 4.332-3.584 2.638-3.653 4.41-3.653 8.883z" opacity="0.3" transform="translate(-117.93 -86.809)"/>
+            </g>
+        </g>
+        <g id="Component_20_54" transform="translate(1314.523 3429.306)">
+            <path id="Rectangle_2273" fill="#4f91b3" d="M0 0H396.294V61H0z" opacity="0.1"/>
+            <path id="Line_193" fill="none" stroke="#4f91b3" d="M280 0L0 0" opacity="0.7" transform="translate(66.121 30.194)"/>
+            <g filter="url(#Ellipse_425)" transform="translate(-79.18 -160.09)">
+                <circle id="Ellipse_425-2" cx="9" cy="9" r="9" class="cls-6" transform="translate(141 181.78)"/>
+            </g>
+            <g id="baseline-play_arrow-24px" class="cls-7" transform="translate(12.181 17.032)">
+                <path id="Path_698" d="M0 0h27.83v27.83H0z" class="cls-8"/>
+            </g>
+            <path id="Path_6535" d="M8 5v16.234l12.755-8.117z" class="cls-6" transform="translate(13.457 6.83)"/>
+            <text id="_0:00" fill="#083d58" font-family="AlmoniNeueDL4.0AAA-Regular, 'Almoni Neue DL 4.0 AAA'" font-size="18px" opacity="0.7" transform="translate(43.293 50)">
+                <tspan x="-32.984" y="0">0:00</tspan>
+            </text>
+            <g id="baseline-more_vert-24px" class="cls-7" transform="translate(361.621 18.694)">
+                <path id="Path_2016" d="M0 0h24v24H0z" class="cls-8"/>
+                <path id="Path_2017" fill="#4f91b3" d="M12 8a2 2 0 1 0-2-2 2.006 2.006 0 0 0 2 2zm0 2a2 2 0 1 0 2 2 2.006 2.006 0 0 0-2-2zm0 6a2 2 0 1 0 2 2 2.006 2.006 0 0 0-2-2z"/>
+            </g>
+        </g>
+    </g>
+</svg>

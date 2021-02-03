@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108.787" height="109.713" viewBox="0 0 108.787 109.713">
+    <defs>
+        <filter id="shb3bl8e2a" width="108.787" height="109.713" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g filter="url(#shb3bl8e2a)" transform="translate(9 6) translate(-9 -6)">
+            <g fill="#fff" stroke="#4f91b3" transform="translate(9 6)">
+                <rect width="90.787" height="91.713" stroke="none" rx="45"/>
+                <rect width="89.787" height="90.713" x=".5" y=".5" fill="none" rx="44.5"/>
+            </g>
+        </g>
+        <path fill="#083d58" d="M186.192 155.33c0-4.473-.069-6.245-3.653-8.883-2.377-1.75-7.436-2.8-11.021-4.332-2.132-.913-2.507-3.966-2.3-7.511.068-1.155 4.85-4.721 4.85-14.692 0-5.366-3.471-9.978-10.618-9.978s-10.618 4.612-10.618 9.978c0 9.733 4.782 13.537 4.85 14.692.207 3.545-.168 6.6-2.3 7.511-3.585 1.534-8.644 2.582-11.02 4.332-3.584 2.638-3.653 4.41-3.653 8.883z" opacity="0.3" transform="translate(9 6) translate(-118.119 -86.809)"/>
+    </g>
+</svg>
